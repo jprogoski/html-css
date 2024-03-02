@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+body{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+div{
+    display: inline-block;
+    font-size: 1em;
+    color: coral;
+}
+
+div>p{
+    background-color: chocolate;
+    color: black;
+}
+
+div:hover{
+    color: rgb(110, 12, 110);
+}
+
+.trecho{
+    background-color: rgb(160, 82, 233);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1#tituloo{
+    background-color: rgb(209, 19, 209);
+    width: 40px;
+}
+
+.paragrafo{
+    color: black;
+    font-size: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.subtitulo{
+    color: aquamarine;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    color: blueviolet;
+}
+
+p{
+    font-size: 2em;
+    color: black;
+}
+
+.last{
+    background-color: cadetblue;
+    font-size: 16px;
+    color: black;
+    width: 200px;
+}

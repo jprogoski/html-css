@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+        nav{
+            text-decoration: none;
+            background-color: rgb(107, 107, 107);
+            font-weight: bold;
+            margin: 30px;
+            box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.603);
+        }
+
+        nav > a{
+            background-color: rgb(146, 146, 146);
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+            
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.514);
+        }
+
+        
+        footer{
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 2px;
+            text-align: center;
+        }
+
+        #noticias{
+            background-color: rgb(165, 165, 165);
+        }
+
+        aside{
+            background-color: rgb(75, 74, 74);
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        h1{
+            box-shadow: inset 5px 4px 3px  rgba(0, 0, 0, 0.479);
+        }
+        div#boleta{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site!</h1>
+        <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section  id="noticias">
+            <article>
+                
+                <h2>Notícia sem nexo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iste quaerat blanditiis, ipsum aut veniam doloribus magnam perspiciatis minima fugit dolore sed temporibus facere, dolores minus quibusdam repellat, dolorum maiores.</p>
+                <aside><p>Escrito por minha pessoa!</p></aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo dev front-end João Marques.</p>
+    </footer>
+    <div id="boleta">
+    </div>
+</body>
+</html>
