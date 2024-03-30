@@ -47,9 +47,11 @@ a:hover {
     width: 500px;
     height: 600px;
     padding: 20px;
-    background-color: lightgreen;
+    margin: 20px;
+    background-color: rgba(0, 70, 0, 0.493);
 }
 
 .p2 {
     font-size: 40px;
 }
+
