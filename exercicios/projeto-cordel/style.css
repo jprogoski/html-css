@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+header {
+    padding: 80px;
+    margin: -10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    font-size: 150px;
+    margin: 0px;
+}
+
+header > p {
+    font-size: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#texto {
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.p1 {
+    font-size: 70px;
+}
+
+#texte {
+    width: 100%;
+    height: 98vh;
+    background-image: url(imagens/background001.jpg);
+    margin: -10px;
+}
+
+#texte > aside {
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    background-color: lightgreen;
+}
+
+.p2 {
+    font-size: 40px;
+}
