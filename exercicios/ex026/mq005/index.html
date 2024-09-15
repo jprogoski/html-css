@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -30,5 +34,23 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat dignissimos hic nulla consequuntur natus, magni quis enim ipsam. Iure, repudiandae consectetur quaerat aut modi odio accusamus deserunt obcaecati similique. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nesciunt vero omnis, voluptate, repudiandae reiciendis perspiciatis nostrum ut iusto nobis hic? Reiciendis beatae amet, dicta quam est illo itaque accusantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis reiciendis vel dolorum? Corrupti minus, odio consectetur molestias aliquam illum soluta hic suscipit neque eaque sapiente similique, magnam rerum reiciendis ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, omnis? Earum blanditiis fugit illum dolorem voluptates voluptas veritatis possimus. Illum hic fugiat totam quod possimus, beatae delectus omnis corrupti accusamus?</p>
         </article>
     </main>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block')  {
+                itens.style.display = 'none'
+            } else { (itens.style.display == 'none') 
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
