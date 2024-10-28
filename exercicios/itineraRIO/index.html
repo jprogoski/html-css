@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Informações</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Informações</h1>
+        <p id="info"></p>
+        <button onclick="gerarInformacao()">Gerar Informação</button>
+    </div>
+
+    <script>
+        function gerarInformacao() {
+            const infos = [
+                "Informação 1: O céu é azul.",
+                "Informação 2: O café é uma das bebidas mais consumidas no mundo.",
+                "Informação 3: Python é uma linguagem de programação muito popular.",
+                "Informação 4: O Brasil é o maior produtor de café do mundo."
+            ];
+            const infoAleatoria = infos[Math.floor(Math.random() * infos.length)];
+            document.getElementById('info').innerText = infoAleatoria;
+        }
+    </script>
+</body>
+</html>
